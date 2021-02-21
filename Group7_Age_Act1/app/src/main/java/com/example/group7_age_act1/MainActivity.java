@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         lastname = findViewById(R.id.lastname);
                         firstname = findViewById(R.id.firstname);
-                        String Fullname = firstname.getText() + "" + lastname.getText() + "";
+                        String Fullname = firstname.getText() + " " + lastname.getText() + " ";
                         Bcalendar = Calendar.getInstance();
                         Cyear = Bcalendar.get(Calendar.YEAR);
                         Cmonth = Bcalendar.get(Calendar.MONTH);
