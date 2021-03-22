@@ -1,4 +1,21 @@
 <resources>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name = "Leave">Please Select An Item</string>
+    <string-array name="Types">
+        <item>Maternity Leave</item>
+        <item>Paternity Leave</item>
+        <item>Sick Leave</item>
+        <item>Annual Leave</item>
+        <item>Bereavement Leave</item>
+
+        </string-array>
+    <string name = "Dayleave">Please Select A Date</string>
+    <string-array name="Days">
+        <item>1 week</item>
+        <item>2 weeks </item>
+        <item>3 weeks</item>
+        <item>2 months</item>
+
+    </string-array>
 </resources>

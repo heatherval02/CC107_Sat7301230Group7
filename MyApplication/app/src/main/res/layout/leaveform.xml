@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Leaveformlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gredient">
+
+    <TextView
+        android:id="@+id/transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Transaction No#: "
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/EmployeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transaction"
+        android:text="Employee ID: "
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/LeaveType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmployeeID"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="27dp"
+        android:text="Leave Type: "
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinnerofleave"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/EmployeeID"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="27dp"
+        android:entries="@array/Types"
+        android:prompt="@string/Leave"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/DayofLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LeaveType"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="27dp"
+        android:text="Days of Leave: "
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinnerofdays"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/DayofLeave"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="-22dp"
+        android:entries="@array/Days"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:text="Please Select a Date of your Leave"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/Startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Start"
+        android:layout_marginTop="10dp"
+        android:text="Enter Your Starting Date"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Startdate"
+        android:layout_marginTop="10dp"
+        android:text="Enter Your Ending Date"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Enddate"
+        android:layout_marginTop="56dp"
+        android:text="Noted By: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Approveby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notedby"
+        android:layout_marginTop="32dp"
+        android:text="Approve By: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/notedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Enddate"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="56dp"
+        android:text="Noted Date: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Approvedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notedDate"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="32dp"
+        android:text="Approve Date: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/EffectivetyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Approveby"
+        android:layout_marginTop="32dp"
+        android:text="Effectivity Date: "
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EffectivetyDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttoncorners"
+        android:text="Submit" />
+
+
+</RelativeLayout>
