@@ -1,4 +1,54 @@
 <resources>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name = "Leave">Please Select An Item</string>
+    <string-array name="Types">
+        <item>Maternity Leave</item>
+        <item>Paternity Leave</item>
+        <item>Sick Leave</item>
+        <item>Annual Leave</item>
+        <item>Bereavement Leave</item>
+
+        </string-array>
+    <string-array name="LeaveDays">
+        <item>1 Week</item>
+        <item>2 weeks </item>
+        <item>3 Weeks</item>
+        <item>2 months</item>
+
+    </string-array>
+    <string-array name="LoanTypes">
+        <item>Salary Loan</item>
+        <item>Calamity Loan</item>
+        <item>SSS Loan</item>
+        <item>Maternity Loan</item>
+        <item>Bereavement Leave</item>
+
+    </string-array>
+    <string-array name="LoanAmount">
+        <item>10,000</item>
+        <item>20,000</item>
+        <item>30,000</item>
+        <item>40,00</item>
+        <item>50,000</item>
+        <item>60,000</item>
+        <item>70,000</item>
+        <item>80,00</item>
+        <item>90,000</item>
+        <item>100,000</item>
+
+    </string-array>
+    <string-array name="LoanMonth">
+        <item>3 Months</item>
+        <item>6 Months </item>
+        <item>9 Months</item>
+        <item>12 Months</item>
+        <item>18 Months</item>
+        <item>24 Months</item>
+    </string-array>
+    <string-array name="Loan">
+        <item>Cut off</item>
+        <item>Every Month</item>
+    </string-array>
+
 </resources>

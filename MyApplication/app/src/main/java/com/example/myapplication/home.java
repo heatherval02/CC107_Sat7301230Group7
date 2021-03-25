@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.lifecycle.ReportFragment;
 import androidx.transition.Slide;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,14 +41,14 @@ public class home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.menu_home:
-                        Toast.makeText(getApplicationContext(), "Home Panel is Open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                    case R.id.menu_LeaveForm:
+                 Intent intent = new Intent (home.this,LeaveForm.class);
+                       startActivity(intent);
                         break;
 
-                    case R.id.menu_call:
-                        Toast.makeText(getApplicationContext(), "Call Panel is Open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                    case R.id.menu_LoanForm:
+                        intent = new Intent(home.this, LoanForm.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_setting:
@@ -58,5 +61,7 @@ public class home extends AppCompatActivity {
             }
         });
 
+
     }
+
 }

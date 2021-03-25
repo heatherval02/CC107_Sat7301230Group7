@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Leaveformlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gredient">
+
+    <TextView
+        android:id="@+id/Loantransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="55dp"
+        android:text="Transaction No#: "
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/LoanTransactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Loantransaction"
+        android:layout_marginTop="27dp"
+        android:text="Transaction Date: "
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/LoanEmployeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Loantransaction"
+        android:layout_marginTop="0dp"
+        android:text="Employee ID: "
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/LoanType"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/LoanEmployeeID"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="51dp"
+        android:text="Loan Type: "
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/spinnerofLoanType"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/LoanEmployeeID"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="51dp"
+        android:entries="@array/LoanTypes"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/LoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/LoanType"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="27dp"
+        android:text="Loan Amount: "
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/spinnerofLoanAmount"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/spinnerofLoanType"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="27dp"
+        android:entries="@array/LoanAmount"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/LoanNoMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/LoanAmount"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="27dp"
+        android:text="No. of Months: "
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/spinnerofLoanMonths"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/spinnerofLoanAmount"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="27dp"
+        android:entries="@array/LoanMonth"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/PayAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/LoanNoMonths"
+        android:layout_marginTop="27dp"
+        android:text="Pay Amount: "
+        android:textSize="17dp" />
+    <TextView
+        android:id="@+id/Interest"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/PayAmount"
+        android:layout_marginTop="27dp"
+        android:text="Interest: "
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/Every"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Interest"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Every: "
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEvery"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Interest"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/Loan"
+        android:textSize="17dp" />
+    <Button
+        android:id="@+id/LoanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerEvery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttoncorners"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/editTextTransactionNo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="150dp"
+        android:layout_height="25dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/editTextEmployeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Loantransaction"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="28dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/editTextTransactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Loantransaction"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="2dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/editTextPayAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/spinnerofLoanMonths"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/editTextInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/editTextPayAmount"
+        android:layout_marginLeft="100dp"
+        android:textSize="17dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+
+</RelativeLayout>

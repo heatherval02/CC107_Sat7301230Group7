@@ -1,0 +1,44 @@
+  <androidx.cardview.widget.CardView
+        android:id="@+id/widget"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/lightdeepgreen"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="68dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/widget"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="57dp"
+        app:cardBackgroundColor="@color/lightdeepgreen"
+        app:cardCornerRadius="25dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Here"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"/>
+    </androidx.cardview.widget.CardView>

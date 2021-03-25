@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_home"
+    <item android:id="@+id/menu_LeaveForm"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home"/>
+        android:title="Leave Form"/>
 
-    <item android:id="@+id/menu_call"
+    <item android:id="@+id/menu_LoanForm"
         android:icon="@drawable/ic_baseline_call_24"
-        android:title="Call"/>
+        android:title="Loan Form"/>
 
     <item android:id="@+id/menu_setting"
         android:icon="@drawable/ic_baseline_settings_24"
