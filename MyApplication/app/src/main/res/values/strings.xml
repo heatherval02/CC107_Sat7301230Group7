@@ -1,7 +1,7 @@
 <resources>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name = "Leave">Please Select An Item</string>
+    <string name="Leave">Please Select An Item</string>
     <string-array name="Types">
         <item>Maternity Leave</item>
         <item>Paternity Leave</item>
@@ -9,7 +9,7 @@
         <item>Annual Leave</item>
         <item>Bereavement Leave</item>
 
-        </string-array>
+    </string-array>
     <string-array name="LeaveDays">
         <item>1 Week</item>
         <item>2 weeks </item>

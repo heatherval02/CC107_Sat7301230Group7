@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -9,12 +10,13 @@
         android:label="Project"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".home"></activity>
-        <activity android:name=".LeaveForm"/>
-        <activity android:name=".LoanForm"/>
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Splash_Screen"></activity>
+        <activity android:name=".home" />
+        <activity android:name=".LeaveForm" />
+        <activity android:name=".LoanForm" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
