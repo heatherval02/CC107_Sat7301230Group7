@@ -1,12 +1,14 @@
 package com.example.myapplication;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -19,7 +21,7 @@ import java.util.Calendar;
 
 
 public class LeaveForm extends AppCompatActivity {
-    private Spinner spinnerLeave, spinnerDay;
+
     EditText Sdate, Edate;
 
     DatePickerDialog StartPicker, EndPicker;
@@ -51,6 +53,7 @@ public class LeaveForm extends AppCompatActivity {
             }
 
         });
+
         Edate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,5 +72,14 @@ public class LeaveForm extends AppCompatActivity {
 
             }
         });
+        Button viewbtn = findViewById(R.id.LeaveButton);
+        viewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LeaveForm.this,Leaveview.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

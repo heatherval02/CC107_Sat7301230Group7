@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gredient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/logoelselario"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/empId"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="#00173F5F"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="Employee ID Number"
+
+        android:inputType="textPersonName"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/empId"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:background="#00173F5F"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="57dp"
+        android:background="@drawable/buttoncorners"
+        android:text="Login"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnlog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/buttoncorners"
+        android:text="Register Here"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

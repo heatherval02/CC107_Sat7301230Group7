@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,6 +27,40 @@ public class home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+
+        Button loanbtn = findViewById(R.id.btnloanform);
+        loanbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this,LoanForm.class);
+                startActivity(intent);
+            }
+        });
+        Button leavebtn = findViewById(R.id.btnleaveform);
+        leavebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this,LeaveForm.class);
+                startActivity(intent);
+            }
+        });
+        Button payslipbtn = findViewById(R.id.btnpayslip);
+        payslipbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this,Payslip.class);
+                startActivity(intent);
+            }
+        });
+        Button infobtn = findViewById(R.id.myInfoBtn);
+        infobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this,myInfo.class);
+                startActivity(intent);
+            }
+        });
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -41,19 +76,19 @@ public class home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.menu_LeaveForm:
-                 Intent intent = new Intent (home.this,LeaveForm.class);
+                    case R.id.menu_editinfo:
+                 Intent intent = new Intent (home.this,EditInfo.class);
                        startActivity(intent);
                         break;
 
-                    case R.id.menu_LoanForm:
-                        intent = new Intent(home.this, LoanForm.class);
+                    case R.id.menu_aboutus:
+                        intent = new Intent(home.this, AboutUs.class);
                         startActivity(intent);
                         break;
 
-                    case R.id.menu_setting:
-                        Toast.makeText(getApplicationContext(), "Setting Panel is Open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                    case R.id.menu_references:
+                        intent = new Intent(home.this, References.class);
+                        startActivity(intent);
                         break;
                 }
 

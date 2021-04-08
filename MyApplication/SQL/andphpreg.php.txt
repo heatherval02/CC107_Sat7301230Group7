@@ -1,0 +1,28 @@
+<?php
+$servername="localhost";
+$mysql_user="root";
+$mysql_pass="";
+$dbname="project";
+$conn=mysqli_connect($servername,$mysql_user,$mysql_pass,$dbname);
+if ($conn){
+	echo("connection sucesss");
+}else{
+echo("connection not sucessful");
+
+}
+if ($_SERVER['REQUEST_METHOD']=='POST'){
+	$emp=$_POST['EmployeeID'];
+	$fname=$_POST['Firstname'];
+	$lname=$_POST['Lastname'];
+	$pass=$_POST['Password'];
+	$query="INSERT INTO `andphpreg`(`EmployeeID`, `Firstname`, `Lastname`, `Password`) VALUES (`$emp`,`$fname`,`$lname`,`$pass`)"
+	if (mysql_query($conn,$query)){
+		echo("regeistered sucessfully");
+	}else{
+		echo("error in registration");
+	}
+	}else{
+		echo("error in request method");
+	}
+		
+?>

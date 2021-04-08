@@ -22,7 +22,6 @@
         <item>Calamity Loan</item>
         <item>SSS Loan</item>
         <item>Maternity Loan</item>
-        <item>Bereavement Leave</item>
 
     </string-array>
     <string-array name="LoanAmount">

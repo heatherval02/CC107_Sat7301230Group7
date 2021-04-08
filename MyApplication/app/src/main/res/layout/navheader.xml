@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/blue"
-    android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gredient"
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoelselario"
         />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp"
-        android:text="Name of employee"/>
 
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"
-        android:textSize="20dp"
-        android:text="Name of Company"/>
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:text="ElSelario"/>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

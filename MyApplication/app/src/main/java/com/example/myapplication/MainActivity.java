@@ -34,13 +34,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText editTextPassword, firstNameText, lastNameText, editTextEmpId;
     private Button buttonRegister;
     private ProgressDialog progressDialog;
-    private Button LogIn;
+    private Button Backbtn;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         firstNameText = (EditText) findViewById(R.id.firstnameText);
         lastNameText = (EditText) findViewById(R.id.lastnameText);
@@ -52,14 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog = new ProgressDialog(this);
 
         buttonRegister.setOnClickListener(this);
-
     }
 
     private void registerUser(){
         final String employeeId = editTextEmpId.getText().toString().trim();
         final String firstname = firstNameText.getText().toString().trim();
         final String lastname = lastNameText.getText().toString().trim();
-
         final String password = editTextPassword.getText().toString().trim();
 
         progressDialog.setMessage("Registering user...");
@@ -107,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        LogIn = (Button)findViewById(R.id.LogInbtn);
+        Backbtn = (Button)findViewById(R.id.Backbtn);
         if(v == buttonRegister){
             registerUser();
         }

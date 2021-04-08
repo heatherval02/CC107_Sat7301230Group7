@@ -6,23 +6,33 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Project"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logoelselario"
+        android:background="@drawable/gredient"
+        android:label="ElSelario"
+        android:roundIcon="@drawable/logoelselario"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Splash_Screen"></activity>
-        <activity android:name=".home" />
-        <activity android:name=".LeaveForm" />
-        <activity android:name=".LoanForm" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Splash_Screen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".home" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".LeaveForm" />
+        <activity android:name=".LoanForm" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".EditInfo" />
+        <activity android:name=".References" />
+        <activity android:name=".Payslip" />
+        <activity android:name=".myInfo" />
+        <activity android:name=".Leaveview"/>
+        <activity android:name=".LoanView"/>
+        <activity android:name=".Payslip1"/>
     </application>
-
 </manifest>

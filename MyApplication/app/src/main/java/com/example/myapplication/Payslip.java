@@ -8,19 +8,20 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoanForm extends AppCompatActivity {
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+public class Payslip extends AppCompatActivity {
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loanform);
+        setContentView(R.layout.payslip);
 
-        Button Viewbtn = findViewById(R.id.LoanButton);
-        Viewbtn.setOnClickListener(new View.OnClickListener() {
+        Button btnnext = findViewById(R.id.payslipNext);
+        btnnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoanForm.this,LoanView.class);
+                Intent intent = new Intent(Payslip.this,Payslip1.class);
                 startActivity(intent);
+
             }
         });
-    }
+        }
 }

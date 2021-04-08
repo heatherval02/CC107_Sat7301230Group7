@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/black"
+    android:background="@drawable/gredient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -11,11 +11,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="150dp"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="74dp"
-        android:src="@drawable/logo1"
+        android:src="@drawable/logoelselario"
         android:layout_centerHorizontal="true"/>
 
     <EditText
@@ -39,7 +39,7 @@
         android:layout_below="@+id/editTextEmployeeID"
         android:layout_marginTop="15dp"
         android:background="#00173F5F"
-        android:drawableLeft="@drawable/password"
+        android:drawableLeft="@drawable/names"
         android:ems="10"
         android:hint="Firstname"
         android:layout_centerHorizontal="true"/>
@@ -51,7 +51,7 @@
         android:layout_below="@+id/firstnameText"
         android:layout_marginTop="15dp"
         android:background="#00173F5F"
-        android:drawableLeft="@drawable/password"
+        android:drawableLeft="@drawable/names"
         android:ems="10"
         android:hint="Lastname"
         android:layout_centerHorizontal="true"/>
@@ -71,13 +71,13 @@
 
 
     <Button
-        android:id="@+id/LogInbtn"
+        android:id="@+id/Backbtn"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/passwordText"
         android:layout_marginTop="22dp"
+        android:layout_below="@+id/registerBtn"
         android:background="@drawable/buttoncorners"
-        android:text="Login"
+        android:text="Back"
         android:textColor="#fff"
         android:layout_centerHorizontal="true"/>
 
@@ -85,7 +85,7 @@
         android:id="@+id/registerBtn"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/LogInbtn"
+        android:layout_below="@+id/passwordText"
         android:layout_marginTop="11dp"
         android:background="@drawable/buttoncorners"
         android:text="Register Here"
