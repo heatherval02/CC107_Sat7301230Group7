@@ -20,6 +20,7 @@ public class Payslip1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Payslip1.this,home.class);
                 startActivity(intent);
+                finish();
 
             }
         });

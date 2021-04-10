@@ -56,7 +56,7 @@ public class home extends AppCompatActivity {
         infobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this,myInfo.class);
+                Intent intent = new Intent(home.this,EditInfo.class);
                 startActivity(intent);
             }
         });
@@ -76,19 +76,22 @@ public class home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.menu_editinfo:
-                 Intent intent = new Intent (home.this,EditInfo.class);
-                       startActivity(intent);
-                        break;
-
                     case R.id.menu_aboutus:
-                        intent = new Intent(home.this, AboutUs.class);
+                 Intent  intent = new Intent(home.this, AboutUs.class);
                         startActivity(intent);
                         break;
+
 
                     case R.id.menu_references:
                         intent = new Intent(home.this, References.class);
                         startActivity(intent);
+
+                        break;
+                    case R.id.menu_logout:
+                         intent = new Intent(home.this,LogIn.class);
+                        startActivity(intent);
+                        finish();
+
                         break;
                 }
 

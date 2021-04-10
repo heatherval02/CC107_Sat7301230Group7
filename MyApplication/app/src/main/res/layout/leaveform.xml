@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        app:title="Loan Form"
+        app:title="Leave Form"
         app:titleTextColor="@color/cardview_light_background"
         android:background="@drawable/gredient"
         />
@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextLeaveTransaction"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -51,7 +51,7 @@
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextEmployeeID"
         android:layout_width="wrap_content"
         android:layout_height="40dp"

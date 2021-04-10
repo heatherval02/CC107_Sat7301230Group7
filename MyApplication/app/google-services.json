@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211252840409",
+    "project_id": "elselario",
+    "storage_bucket": "elselario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211252840409:android:4f674984380f2f4c4e3bc8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211252840409-12ic7ijrenbcd2i7d007lo18jc7amtfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0bWL802IDi7CBC6_D-m83qk65haxfU34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211252840409-12ic7ijrenbcd2i7d007lo18jc7amtfe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

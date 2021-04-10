@@ -30,8 +30,7 @@
         android:drawableLeft="@drawable/username"
         android:ems="10"
         android:hint="Employee ID Number"
-
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
         android:textSize="16dp" />
 
     <EditText

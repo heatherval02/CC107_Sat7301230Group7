@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        app:title="Edit my Information"
+        app:title=" My Information"
         app:titleTextColor="@color/cardview_light_background"
         android:background="@drawable/gredient"/>
 
@@ -26,12 +26,12 @@
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editNmeInfo"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="74dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="85dp"
         android:ems="10" />
 
@@ -48,9 +48,9 @@
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editIdnumInfo"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_below="@+id/editNmeInfo"
         android:layout_marginLeft="160dp"
@@ -66,21 +66,22 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="16dp"
-        android:text="Age: "
+        android:text="User UID: "
         android:textSize="17dp"
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <EditText
-        android:id="@+id/editAgeInfo"
+    <TextView
+        android:id="@+id/UID"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/editNmeInfo"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="67dp"
         android:ems="10"
         android:inputType="numberSigned" />
+
     <TextView
         android:id="@+id/BdayInfo"
         android:layout_width="wrap_content"
@@ -122,7 +123,7 @@
 
     <EditText
         android:id="@+id/editAddressInfo"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_below="@+id/editNmeInfo"
         android:layout_alignParentStart="true"
@@ -155,13 +156,13 @@
         android:layout_marginTop="253dp"
         android:ems="10" />
     <Button
-        android:id="@+id/SaveBtn"
+        android:id="@+id/UpdateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CompanyNameInfo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
         android:background="@drawable/buttoncorners"
-        android:text="Save" />
+        android:text="Update" />
 
 </RelativeLayout>

@@ -20,6 +20,7 @@ protected void onCreate(@Nullable Bundle savedInstanceState) {
             public void onClick(View view) {
                 Intent intent = new Intent(Payslip.this,Payslip1.class);
                 startActivity(intent);
+                finish();
 
             }
         });
