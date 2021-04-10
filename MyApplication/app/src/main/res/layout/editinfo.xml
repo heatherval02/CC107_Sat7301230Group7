@@ -164,5 +164,14 @@
         android:layout_marginTop="43dp"
         android:background="@drawable/buttoncorners"
         android:text="Update" />
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpdateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/buttoncorners"
+        android:text="Go to Home" />
 
 </RelativeLayout>

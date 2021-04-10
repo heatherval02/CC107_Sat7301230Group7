@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,6 +51,14 @@ public class LoanView extends AppCompatActivity {
         loanamount.setText(getloanamount);
         nomonths.setText(getnomonths);
         every.setText(getevery);
+
+        Button Submitbtn = findViewById(R.id.OvLoanSubmit);
+        Submitbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(LoanView.this, "Request Sent", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 

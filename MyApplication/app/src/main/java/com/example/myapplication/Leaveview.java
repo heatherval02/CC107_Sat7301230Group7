@@ -34,6 +34,14 @@ public class Leaveview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.leaveview);
 
+        Button submitbtn = findViewById(R.id.OvSubmit);
+        submitbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Leaveview.this, "Request Sent", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         Button backbtn = findViewById(R.id.OvLeaveBack);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override

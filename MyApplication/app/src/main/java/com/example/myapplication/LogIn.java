@@ -67,7 +67,7 @@ public class LogIn extends AppCompatActivity {
 
                                         Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_LONG).show();
                                         Intent newIntent;
-                                        newIntent = new Intent(LogIn.this, home.class);
+                                        newIntent = new Intent(LogIn.this, EditInfo.class);
                                         newIntent.putExtra("uid", obj.getString("uid"));
                                         newIntent.putExtra("employeeId", obj.getString("employeeId"));
                                         newIntent.putExtra("firstname", obj.getString("firstname"));

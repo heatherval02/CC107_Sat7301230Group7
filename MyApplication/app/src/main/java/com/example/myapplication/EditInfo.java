@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -39,6 +40,7 @@ public class EditInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.editinfo);
 
+
         uid = getIntent().getStringExtra("uid");
         employeId = getIntent().getStringExtra("employeeId");
         fullname = getIntent().getStringExtra("firstname") +" " +getIntent().getStringExtra("lastname");
@@ -50,6 +52,7 @@ public class EditInfo extends AppCompatActivity {
         updateInfoBtn = findViewById(R.id.UpdateBtn);
         employeeDob = findViewById(R.id.Birthdate);
         employeeCompany = findViewById(R.id.editCompanyNameInfo);
+        Button homebtn1 = findViewById(R.id.homebtn);
 
         userUID.setText(uid);
         userEmployeeId.setText(employeId);
@@ -73,6 +76,15 @@ public class EditInfo extends AppCompatActivity {
 
             }
 
+        });
+
+        homebtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EditInfo.this,home.class);
+                startActivity(intent);
+                finish();
+            }
         });
 
         updateInfoBtn.setOnClickListener(new View.OnClickListener() {
@@ -134,9 +146,6 @@ public class EditInfo extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-
-
-
 
     }
 }
